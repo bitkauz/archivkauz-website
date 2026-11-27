@@ -1,0 +1,43 @@
+name: Website prüfen und paketieren
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - run: python3 scripts/check_site.py
+      - run: python3 scripts/package.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: archivkauz-website
+          path: dist/archivkauz-website.zip
+          if-no-files-found: error
+  release:
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v5
+        with:
+          name: archivkauz-website
+          path: dist
+      - name: Attach ZIP
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+          REPO: ${{ github.repository }}
+        run: |
+          if gh release view "$TAG" --repo "$REPO" >/dev/null 2>&1; then
+            gh release upload "$TAG" dist/archivkauz-website.zip --repo "$REPO"
+          else
+            gh release create "$TAG" dist/archivkauz-website.zip --repo "$REPO" --verify-tag --generate-notes --prerelease
+          fi
