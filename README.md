@@ -1,5 +1,7 @@
 # ArchivKauz – Produktwebsite
 
+[![Website prüfen und paketieren](https://github.com/bitkauz/archivkauz-website/actions/workflows/website.yml/badge.svg)](https://github.com/bitkauz/archivkauz-website/actions/workflows/website.yml)
+
 Offizielle geplante Produktadresse: **https://archivkauz.bitkauz.de/**. Eigenständige DE/EN-Website von Bitkauz, getrennt von der Anwendung und dem privaten Lizenzserver.
 
 - Anwendung und Dokumentation: https://github.com/bitkauz/archivkauz
