@@ -23,4 +23,4 @@ Ein eigenständiger geometrischer Kauz über einem aufgeschlagenen Buch: aufmerk
 - [Bildmarke für dunkle Hintergründe](../public/assets/logo-mark-dark.svg)
 - Wortmarke als Text mit zweifarbiger Typografie; siehe öffentliches Website-Layout.
 
-SVG bleibt in jeder Größe skalierbar, keine Streckung oder willkürliche Umfärbung. Markenverwendung gemäß [Markenrichtlinien der Anwendung](https://github.com/bitkauz/archivkauz/blob/main/TRADEMARK.md). Vor rechtlich verbindlicher Freigabe Markenverfügbarkeit prüfen. Produktlogo ist ein Entwurf mit Freigabemöglichkeit durch Bitkauz.
+SVG bleibt in jeder Größe skalierbar, keine Streckung oder willkürliche Umfärbung. Markenverwendung nach Freigabe durch den Herausgeber; interne Markenrichtlinien werden nicht öffentlich verlinkt. Vor rechtlich verbindlicher Freigabe Markenverfügbarkeit prüfen. Produktlogo ist ein Entwurf mit Freigabemöglichkeit durch Bitkauz.
