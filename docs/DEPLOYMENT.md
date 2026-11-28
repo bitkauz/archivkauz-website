@@ -5,7 +5,7 @@ Vorgesehener Host: archivkauz.bitkauz.de. Domain und TLS durch den Betreiber ein
 1. Subdomain im Hostingpanel anlegen, eigenen Webroot zuweisen und HTTPS einrichten.
 2. Impressums-/Datenschutzinformationen und Markenentwurf vor dem ersten öffentlichen Livebetrieb prüfen und ergänzen. Keine unfertigen Downloadlinks oder Lizenzfreigaben.
 3. Im Repository unter Actions den Workflow „Website prüfen und paketieren“ ausführen. Das Artefakt herunterladen und das enthaltene flache ZIP entpacken; alternativ lokal bauen.
-4. Inhalt des ZIP (index.html, en/, assets/) in den Webroot übertragen, keine zusätzliche Verzeichnisebene.
+4. Inhalt des ZIP (index.html, en/, updates/, assets/) in den Webroot übertragen, keine zusätzliche Verzeichnisebene.
 5. DE/EN, Navigation, Logo, TLS und öffentliche Links (keine Links auf private Repositories) prüfen.
 6. Bei freigegebenem Versions-Tag v* erzeugt die Action einen Release mit ZIP. Vor einem Update bisherige Website sichern, neue Version getrennt testen, dann umschalten.
 
