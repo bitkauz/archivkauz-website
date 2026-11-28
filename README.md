@@ -12,6 +12,7 @@ Offizielle geplante Produktadresse: **https://archivkauz.bitkauz.de/**. Eigenst�
 
 - `public/`: vollständiger Webroot, HTML/CSS und lokale SVG-Assets
 - `public/en/`: englische Sprachfassung
+- `public/updates/`, `public/en/updates/`: öffentliche Entwicklungsneuigkeiten
 - `docs/BRAND.md`: Markenentwurf
 - `docs/DEPLOYMENT.md`: Webspace und Release-Ablauf
 - `scripts/`: lokale Linkprüfung und flaches ZIP
@@ -23,4 +24,4 @@ Offizielle geplante Produktadresse: **https://archivkauz.bitkauz.de/**. Eigenst�
 `python3 scripts/check_site.py` prüft lokale Verweise und SVG-Dateien. `python3 scripts/package.py` erzeugt `dist/archivkauz-website.zip` mit `index.html` unmittelbar im Archiv-Root. Die Action erzeugt ein ZIP-Artefakt, bei Versions-Tags zusätzlich ein GitHub Release. Keine ungefragte FTP-Veröffentlichung oder Übermittlung von Zugangsdaten.
 
 ## Projektstatus
-Stand 27.11.2026: interne Alpha `0.1.0-alpha.1-dev.3` mit ersten Sammlungsfunktionen; produktive Aktivierung und Installation noch nicht freigegeben. Die Website trennt intern umgesetzte Funktionen, nächste Schritte und geplante Erweiterungen. Lizenzmodell: proprietäre, lizenzpflichtige Self-Hosting-Software; keine öffentliche Ausgabe des Anwendungskerns. Preise, Nutzungsbedingungen und öffentlicher Download bleiben bis zur Freigabe offen.
+Stand 28.11.2026: interne Alpha `0.1.0-alpha.1-dev.10` mit Testlizenzaktivierung, Sammlungen, Medienbibliothek, optionalem Scaleway-S3-Speicher und Website-Baukasten. Kein Kundenrelease. Die Website trennt intern umgesetzte Funktionen, nächste Schritte und geplante Erweiterungen. Lizenzmodell: proprietäre, lizenzpflichtige Self-Hosting-Software; keine öffentliche Ausgabe des Anwendungskerns. Preise, Nutzungsbedingungen und öffentlicher Download bleiben bis zur Freigabe offen.
