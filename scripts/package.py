@@ -12,4 +12,6 @@ with ZipFile(out) as archive:
     assert archive.testzip() is None
     assert "index.html" in archive.namelist()
     assert "en/index.html" in archive.namelist()
+    assert "updates/index.html" in archive.namelist()
+    assert "en/updates/index.html" in archive.namelist()
 print(out)
